@@ -1,1 +1,3 @@
-<p>cat-details works!</p>
+<div *ngIf = "cat">{{cat.name}} from component
+  <input type="text" [(ngModel)] = "cat.name">
+</div>

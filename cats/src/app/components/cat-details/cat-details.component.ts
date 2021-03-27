@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Cat } from 'src/app/models/cat';
 
 @Component({
   selector: 'app-cat-details',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cat-details.component.css']
 })
 export class CatDetailsComponent implements OnInit {
+
+  @Input() cat?: Cat;
 
   constructor() { }
 

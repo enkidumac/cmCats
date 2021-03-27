@@ -2,4 +2,4 @@
 <div *ngFor="let catElement of catList">
   <app-cat-view [cat] = "catElement" (selectedCat) = "selectCatFunc($event)"></app-cat-view>
 </div>
-<p *ngIf="selectedCat">{{selectedCat.name}}</p>
+<app-cat-details [cat] = "selectedCat"></app-cat-details>
